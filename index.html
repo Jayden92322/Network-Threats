@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Network security and threats</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fwww.cufonfonts.com%2Ffont%2Fmonaco">
   </head>
   <body>
     <script src="script.js"></script>
@@ -23,11 +24,11 @@
       </tr>
 
       <tr>
-        <td>
+        <td rowspan="6">
           <p>Confidentiality - Keeping data private</p>
         </td>
         <td>
-          <p>Brute force attack - attacker uses software to repeatedly try different passwords to gain access</p>
+          <p><b>Brute force attack</b> - attacker uses software to repeatedly try different passwords to gain access</p>
         </td>
         <td>
           <ul>
@@ -41,10 +42,7 @@
 
       <tr>
         <td>
-          <p>Confidentiality - Keeping data private</p>
-        </td>
-        <td>
-          <p>Spyware -  software that aims to gather information about a person or organization and send it to another entity in a way that harms the user; for example by violating their privacy or endangering their device's security.  Examples include keyloggers, trackers, trojans</p>
+          <p><b>Spyware</b> -  software that aims to gather information about a person or organization and send it to another entity in a way that harms the user; for example by violating their privacy or endangering their device's security.  Examples include keyloggers, trackers, trojans</p>
         </td>
         <td>
           <ul>
@@ -56,10 +54,7 @@
 
       <tr>
         <td>
-          <p>Confidentiality - Keeping data private</p>
-        </td>
-        <td>
-          <p>Phishing - a type of social engineering attack which involves getting a user to enter personal information via a fake website.</p>
+          <p><b>Phishing</b> - a type of social engineering attack which involves getting a user to enter personal information via a fake website.</p>
         </td>
         <td>
           <ul>
@@ -72,10 +67,7 @@
 
       <tr>
         <td>
-          <p>Confidentiality - Keeping data private</p>
-        </td>
-        <td>
-          <p>Pharming - involves modifying DNS entries (local by changing the hosts file or DNS server), which causes users to be directed to the wrong website when they visit a certain web address.  The aim is to capture user login credentials. To change local DNS, attackers  install malware.  Attackers take advantage of exploits in software that control DNS servers</p>
+          <p><b>Pharming</b> - involves modifying DNS entries (local by changing the hosts file or DNS server), which causes users to be directed to the wrong website when they visit a certain web address.  The aim is to capture user login credentials. To change local DNS, attackers  install malware.  Attackers take advantage of exploits in software that control DNS servers</p>
         </td>
         <td>
           <ul>
@@ -87,10 +79,7 @@
 
       <tr>
         <td>
-          <p>Confidentiality - Keeping data private</p>
-        </td>
-        <td>
-          <p>Packet sniffing/eavesdropping - with software like WireShark where the attacker gathers packet data.  If traffic includes passing unencrypted passwords, an unauthorized individual can potentially access your accounts and read confidential data.
+          <p><b>Packet sniffing/eavesdropping</b> - with software like WireShark where the attacker gathers packet data.  If traffic includes passing unencrypted passwords, an unauthorized individual can potentially access your accounts and read confidential data.
           </p>
         </td>
         <td>
@@ -107,11 +96,7 @@
       </tr>
       <tr>
         <td>
-          <p>Confidentiality - Keeping data private</p>
-        </td>
-
-        <td>
-          <p>IP spoofing - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</p>
+          <p><b>IP spoofing</b> - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</p>
         </td>
         <td>
           <ul>
@@ -121,26 +106,44 @@
       </tr>
 
       <tr>
-        <td>
+        <td rowspan="2">
           <p>Integrity - Preventing data modification</p>
         </td>
 
         <td>
-          <p>Man in the Middle Attack -  message/file  integrity (so you know the message has not been tampered with)</p>
+          <p><b>Man in the Middle Attack</b> -  message/file  integrity (so you know the message has not been tampered with)</p>
         </td>
 
         <td>
           <ul>
             <li>Hashing</li>
-            <li>Digital signatures
+            <li>Digital signatures</li>
+            <li>VPN</li>
+            <li>don't use public hotspots</li>
+          </ul>
+        </td>
+      </tr>
 
       <tr>
         <td>
+          <p><b>SQL Injection</b> (see <a href="https://www.w3schools.com/sql/sql_injection.asp">https://www.w3schools.com/sql/sql_injection.asp</a>)</p>
+        </td>
+
+        <td>
+          <ul>
+            <li>Form Validation</li>
+            <li>Prepared statements (with parameterized queries as in your coursework)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">
           <p>Availability - Keeping your network services up and running</p>
         </td>
           
         <td>
-          <p>DoS and DDos Attacks (see IP spoofing above)</p>
+          <p><b>DoS and DDos Attacks</b> (see IP spoofing above)</p>
         </td>
         <td>
           <ul>
@@ -151,11 +154,7 @@
       </tr>
       <tr>
         <td>
-          <p>Availability - Keeping your network services up and running</p>
-        </td>
-          
-        <td>
-          <p>Malicious software or malware eg viruses (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.</p>
+          <p><b>Malicious software or malware eg viruses</b> - (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.</p>
         </td>
         <td>
           <ul>
@@ -163,7 +162,18 @@
             <li>Train staff so they recognize legitimate and suspicious emails and websites.</li>
           </ul>
         </td>
-      
+      </tr>
+      <tr>
+        <td>
+          <p><b>Physical damage</b> eg fire, flood accidental or malicious</p>
+        </td>
+        <td>
+          <ul>
+            <li>Server rooms are kept secure eg biometrics required for entry</li>
+            <li>Log all admin level accesses with date, times and usernames.</li>
+            <li>Maintain backups.</li>
+          </ul>
+        </td>
       </tr>
     </table>
   </div>
