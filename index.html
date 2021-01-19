@@ -98,19 +98,72 @@
             <li>Proxy server or router with NAT to hide network</li>
             <li>Use WPA2 (Wi-Fi Protected Access - the encryption protocol that is used to secure Wi-Fi connections.</li>
             <li>It provides unique encryption keys for each wireless client that connects. </li>
-            <li>Use only secure web connections (HTTPS)
-
+            <li>Use only secure web connections (HTTPS)</li>
+            <li>Only accept SSL Certificate from trusted sources</li>
+            <li>Use a secure VPN (one that uses encryption) - see below</li>
+            <li>Don't use default password</li>
           </ul>
         </td>
       </tr>
       <tr>
         <td>
+          <p>Confidentiality - Keeping data private</p>
+        </td>
+
+        <td>
+          <p>IP spoofing - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</p>
+        </td>
+        <td>
+          <ul>
+            <li>Use a packet filtering firewall (see below)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Integrity - Preventing data modification</p>
+        </td>
+
+        <td>
+          <p>Man in the Middle Attack -  message/file  integrity (so you know the message has not been tampered with)</p>
+        </td>
+
+        <td>
+          <ul>
+            <li>Hashing</li>
+            <li>Digital signatures
+
+      <tr>
+        <td>
+          <p>Availability - Keeping your network services up and running</p>
+        </td>
           
+        <td>
+          <p>DoS and DDos Attacks (see IP spoofing above)</p>
         </td>
         <td>
+          <ul>
+            <li>Packet filtering firewall</li>
+            <li>Automatically update software as patches (changes to software to update, fix, or improve it eg to fix security vulnerability) are released</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Availability - Keeping your network services up and running</p>
+        </td>
+          
+        <td>
+          <p>Malicious software or malware eg viruses (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.</p>
         </td>
         <td>
+          <ul>
+            <li>Anti-virus software, patch update, Firewall</li>
+            <li>Train staff so they recognize legitimate and suspicious emails and websites.</li>
+          </ul>
         </td>
+      
       </tr>
     </table>
   </div>
