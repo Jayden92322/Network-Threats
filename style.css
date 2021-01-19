@@ -1,5 +1,9 @@
 body {
   background-color: seashell;
   font-family: monaco;
-  font: small;
+  font-size: 10px;
+}
+
+table#table td{
+  width: 33%
 }
